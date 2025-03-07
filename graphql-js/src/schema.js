@@ -30,6 +30,20 @@ type Query{
     author(id:ID!):Author
 }
 
+type Mutation{
+    addGame(game:AddInputGame!):Game
+    deleteGame(id:ID!):[Game]
+    updateGame(id:ID!,edits: EditInputGame!): Game
+}
+input AddInputGame{
+    title:String!
+    platform:[String!]!
+}
+input EditInputGame{
+    title:String
+    platform:[String!]
+}
+
 `
 
 
