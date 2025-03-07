@@ -11,6 +11,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "@apollo/client": "^3.13.2",
     "@apollo/server": "^4.11.3",
     "graphql": "^16.10.0"
   }
